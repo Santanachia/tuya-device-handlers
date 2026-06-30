@@ -1,4 +1,4 @@
-"""Quirk for Tuya curtain motor (product_id cf1sl3tj).
+"""Quirk for Tuya 6Gen Roller Shutter Switch (product_id csgb8eqhczvjaetl).
 
 This device reports ``percent_state`` in the standard HA convention
 (0 = closed, 100 = open).  The default CL mapping uses
@@ -21,7 +21,7 @@ from tuya_device_handlers.type_information_ex import (
 
 (
     DeviceQuirk()
-    .applies_to(product_id="cf1sl3tj")
+    .applies_to(product_id="csgb8eqhczvjaetl")
     .override_dpid_type_information_cls(
         dpid=2,
         dpcode="percent_control",
